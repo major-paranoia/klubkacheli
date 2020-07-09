@@ -1,0 +1,9 @@
+#categoryContainer{
+    margin-left: 25%;
+}
+
+@media (max-width: 365px) and (max-height: 400px) {
+    #categoryContainer{
+        margin-left: 5%;
+    }
+  }

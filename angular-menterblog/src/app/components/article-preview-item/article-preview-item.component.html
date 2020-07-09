@@ -1,0 +1,6 @@
+<button (click)="onClick(articlePreview._id)" id="articlePreviewItem" [routerLink]="['/article/',articlePreview._id]">
+    <div id="imgContainer"><img src="{{ articlePreview.previewImage }}" /></div>
+    <h1>{{ articlePreview.title }}</h1>
+    <span>{{ articlePreview.subText }}</span>
+</button>
+

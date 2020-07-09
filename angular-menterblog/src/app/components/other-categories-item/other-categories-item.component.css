@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Proxima Nova;
+  src: url("/assets/fonts/customReg.otf");
+}
+
+.categoryButton{
+     border: none;
+    font-family: "Proxima Nova", Tahoma !important;
+    color: rgb(202, 202, 202);
+    background-color: #303030;
+    font-size: 18px;
+    background: none transparent;
+    margin-bottom: 7.5px;
+    text-align: left;
+    transition-property: color;
+    transition-duration: 300ms;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+hr{
+    margin-bottom: 7.5px;
+}
+
+.categoryButton:focus{
+  outline: 0 !important;
+}
+
+input::-moz-focus-inner{
+    border: none;
+}
+
+.categoryButton:hover{
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 975px) {
+    .categoryButton{
+      font-weight: 600;
+      font-size: 22px;
+    }
+}
+
+@media (max-width: 455px) {
+    .categoryButton{
+      font-weight: 500;
+    }
+  }

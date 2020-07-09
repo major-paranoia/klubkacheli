@@ -1,0 +1,77 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 15%;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+mat-sidenav {
+  background-color: #303030;
+  border: none;
+  margin-top: 140px;
+  display: flex;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.mat-drawer.mat-drawer-push{
+  background-color: #303030;
+}
+
+mat-toolbar {
+  background-color: #303030;
+  transition-property: color;
+  transition-duration: 400ms;
+}
+
+mat-icon{
+  font-size: 38px;
+  width: 34px;
+  height: 26px;
+}
+
+mat-toolbar:hover{
+  color:#91e8bc;
+}
+
+@media (max-width: 975px){
+  .sidenav {
+    width: 37.5%;
+  }
+  mat-sidenav {
+    margin-top: 0px;
+  }
+  mat-nav-list{
+    line-height: 2.8em;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 650px){
+  .sidenav {
+    width: 50%;
+  }
+}
+
+@media (max-width: 975px) and (max-height: 700px) {
+  mat-nav-list{
+    line-height: 2.4em;
+    margin-top: 7.5px;
+  }
+}
+
+@media (min-height: 850px) and (max-width: 975px){
+  mat-nav-list{
+    line-height: 3.4em;
+    margin-top: 45px;
+  }
+}

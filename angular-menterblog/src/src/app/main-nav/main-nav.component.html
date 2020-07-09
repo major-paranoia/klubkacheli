@@ -1,0 +1,25 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="'navigation'"
+      [mode]="mobileQuery.matches ? 'push' : 'side'"
+      [opened]="mobileQuery.matches === false">
+    <mat-nav-list>
+      <app-category-container></app-category-container>
+      <app-other-categories-container></app-other-categories-container>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        onclick="this.blur()"
+        (click)="drawer.toggle()"
+        *ngIf="mobileQuery.matches">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    <ng-content ></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

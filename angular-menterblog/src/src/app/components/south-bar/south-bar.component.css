@@ -1,0 +1,45 @@
+@font-face{
+    font-family: ptsans;
+    src: url("/assets/fonts/ptsans2.ttf");
+}
+
+#containerSouthBar{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    list-style: none;
+    font-family: "ptsans", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+a{
+    color: #fff;
+    transition-property: color;
+    transition-duration: 300ms;
+}
+
+a:hover{
+    color: #91e8bc;
+}
+
+li{
+    margin-right: 15px;
+}
+
+@media (max-width: 880px) {
+    #containerSouthBar {
+      flex-direction: column;
+    }
+    span{
+        display: none;
+    }
+  }
+
+@media (max-width: 975px) {
+    #containerSouthBar {
+        margin-left: 8.75%;
+    }
+}

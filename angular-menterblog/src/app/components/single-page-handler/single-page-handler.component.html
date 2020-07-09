@@ -1,0 +1,10 @@
+<div id="heading">
+    <h1>{{selectedPage}}</h1>
+    <hr/>
+</div>
+<div id="articleSelf">
+    <img src="{{article.fullImage}}" width="100%" />
+    <h3 id="header">{{ article.title }}</h3>
+    <div [innerHTML]="article.content">
+    </div>
+</div>

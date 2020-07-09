@@ -1,0 +1,40 @@
+#articleContainer{
+    width: 82.5%;
+    height: auto;
+    margin:auto;
+    margin-left: 0;
+    
+    background-color: white;
+}
+
+.darkArticleContainer{
+    background-color: rgba(116, 116, 116, 0.671);
+}
+
+@media (max-width: 975px) {
+    #articleContainer {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 715px) {
+    #articleContainer {
+        width: 94%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    #articleContainer {
+        width: 96%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 455px) {
+    #articleContainer {
+        width: 97%;
+        margin: auto;
+    }
+}

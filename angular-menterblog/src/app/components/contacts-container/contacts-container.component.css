@@ -1,0 +1,36 @@
+#contactContainer{
+    display: flex;
+    width: 82.5%;
+    margin: auto;
+    margin-left: 0;
+}
+
+@media (max-width: 975px) {
+    #contactContainer {
+        margin-left: 5%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 880px){
+    #contactContainer{
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 715px) {
+    #contactContainer {
+        width: 94%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    #contactContainer {
+        width: 96%;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+}

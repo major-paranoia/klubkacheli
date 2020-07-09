@@ -1,0 +1,64 @@
+@font-face{
+    font-family: lato;
+    src: url("/assets/fonts/latoLight.ttf");
+}
+
+#articlePreviewItem{
+    width: 100%;
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    word-wrap: break-word;
+    background-color: white;
+    border: none;
+    transition-property: background-color;
+    transition-duration: 400ms;
+}
+
+#imgContainer{
+    display: block;
+    align-self: center;
+    background-color: white;
+    padding: 0;
+    height: 160px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    transition-property: opacity;
+    transition-duration: 400ms;
+}
+
+#articlePreviewItem:hover #imgContainer{
+    background-color: #000;
+}
+
+#articlePreviewItem:hover img{
+    opacity: 0.8;
+}
+
+#articlePreviewItem:hover{
+    background-color: rgb(204, 204, 204);
+    cursor: pointer;
+}
+
+#articlePreviewItem::-moz-focus-inner{
+    border: none;
+}
+
+h1{
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    color: rgb(43, 43, 43);
+    margin-top: 10px;
+    margin-bottom: 8px;
+}

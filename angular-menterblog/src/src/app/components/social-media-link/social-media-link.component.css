@@ -1,0 +1,24 @@
+#iconsContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#socialMediaBox{
+    color: #989898;
+}
+
+svg{
+    fill: #989898;
+    transition-property: fill;
+    transition-duration: 500ms;
+}
+
+svg:hover{
+    fill: #91e8bc;
+    cursor: pointer;
+}
+
+.svgIcon{
+    width: 33%;
+
+}

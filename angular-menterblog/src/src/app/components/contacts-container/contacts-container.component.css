@@ -1,0 +1,12 @@
+#contactContainer{
+    display: flex;
+    width: 82.5%;
+    margin: auto;
+    margin-left: 0;
+}
+
+@media (max-width: 975px) {
+    #contactContainer {
+        margin-left: 8.75%;
+    }
+  }

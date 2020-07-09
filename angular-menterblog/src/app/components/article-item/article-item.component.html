@@ -1,0 +1,15 @@
+<div>
+    <img src="{{article.fullImage}}" width="100%" />
+    <h3 id="header">{{ article.title }}</h3>
+        <div *ngFor="let element of allContents">
+            <div *ngIf="!checkIfElementIsResourceUrl(element)" [innerHTML]="element">
+
+            </div>
+            <div *ngIf="checkIfElementIsResourceUrl(element)" class="videoContainer">
+                <iframe class="videoItem" width="100%" height="600" [src]='element'
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+</div>

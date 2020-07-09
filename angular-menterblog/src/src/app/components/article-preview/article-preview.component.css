@@ -1,0 +1,41 @@
+.previewItem{
+    width: 30%;
+}
+
+.itemContainer{
+    display: contents;
+}
+
+mat-paginator{
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+::ng-deep .mat-paginator [ng-reflect-disabled=false] svg{
+    fill: black;
+    transition-property: fill;
+    transition-duration: 300ms;
+}
+
+::ng-deep .mat-paginator [ng-reflect-disabled=false] svg:hover{
+    fill: #7fad96;
+}
+
+::ng-deep .mat-paginator .mat-paginator-page-size{
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .previewItem{
+        width: 47%;
+    }
+}
+
+@media (max-width: 700px) {
+    .previewItem{
+        width: 95%;
+    }
+}

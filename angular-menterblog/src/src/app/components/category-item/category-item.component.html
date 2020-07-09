@@ -1,0 +1,10 @@
+<div *ngIf="category.categoryType === 'category'">
+    <input (click)="onClick(category)" [ngClass]="setClasses()" 
+    type="button" value="{{ category.title }}" class="categoryButton" 
+    [routerLink]="['/category/',category.categoryId]" />
+</div>
+<div *ngIf="category.categoryType === 'info'">
+    <input (click)="onClick(category)" [ngClass]="setClasses()" 
+    type="button" value="{{ category.title }}" class="categoryButton" 
+    [routerLink]="['/info/',category.categoryId]" />
+</div>

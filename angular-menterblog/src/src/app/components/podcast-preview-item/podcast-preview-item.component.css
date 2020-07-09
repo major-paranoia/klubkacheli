@@ -1,0 +1,46 @@
+@font-face{
+    font-family: lato;
+    src: url("/assets/fonts/latoLight.ttf");
+}
+
+.podcastPreviewItem{
+    width: 100%;
+    font-family: "lato", sans-serif;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    word-wrap: break-word;
+    border: none;
+}
+
+.videoItem{
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+}
+
+.videoContainer{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0px;
+}
+
+h1{
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    color: rgb(43, 43, 43);
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+span{
+    color: black;
+}
